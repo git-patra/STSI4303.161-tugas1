@@ -28,7 +28,7 @@ Preview memakai alamat yang ditampilkan Terminal (biasanya http://127.0.0.1:4173
 - Segitiga: tinggi = digit terakhir. Tinggi 0 berarti tidak ada baris.
 - Aritmatika: awal = dua digit terakhir; beda = digit ketiga dari belakang **+ 1**; cetak 10 suku. Aturan +1 mengikuti contoh karena teks soal dan contoh berbeda.
 - Prima: batas inklusif = dua digit terakhir + 10; mulai dari 2, karena 1 bukan prima.
-- Nama dan kelas opsional. Data hanya dipakai di halaman, tidak disimpan atau dikirim ke server.
+- NIM hanya dipakai di halaman, tidak disimpan atau dikirim ke server.
 
 ## Berkas utama
 

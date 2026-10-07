@@ -4,8 +4,6 @@ import { parseNim, generateTriangle, generateArithmetic, findPrimes } from './ca
 // Elemen berasal dari index.html; perhitungan dipisahkan agar mudah diuji.
 const form = document.querySelector<HTMLFormElement>('#nim-form')!;
 const nim = document.querySelector<HTMLInputElement>('#nim')!;
-const name = document.querySelector<HTMLInputElement>('#name')!;
-const studentClass = document.querySelector<HTMLInputElement>('#class')!;
 const results = document.querySelector<HTMLElement>('#results')!;
 const error = document.querySelector<HTMLElement>('#error')!;
 const status = document.querySelector<HTMLElement>('#status')!;
@@ -33,8 +31,7 @@ form.addEventListener('submit', (event) => {
   clearResults();
   try {
     const data = parseNim(nim.value);
-    const identity = [name.value.trim(), studentClass.value.trim()].filter(Boolean);
-    status.textContent = [...identity, `Hasil untuk NIM ${data.nim}`].join(' · ');
+    status.textContent = `Hasil untuk NIM ${data.nim}`;
     setText('triangle-info', `Digit terakhir = ${data.height}. Tinggi segitiga = ${data.height} baris.`);
     setText('triangle-output', generateTriangle(data.height) || 'Tinggi 0: tidak ada baris yang dicetak.');
     setText('arithmetic-info', `Dua digit terakhir = ${data.nim.slice(-2)} → awal ${data.start}. Beda = ${data.nim.slice(-3, -2)} + 1 = ${data.step}.`);

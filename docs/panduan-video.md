@@ -25,7 +25,7 @@ npm run dev
 
 Tidak perlu menjalankan npm install setiap kali. Bila muncul pesan port 5173 sudah dipakai, buka alamat di atas: server sebelumnya mungkin masih aktif. Untuk restart, tekan Control+C pada Terminal server sebelumnya, lalu jalankan lagi. Jangan menutup Terminal selama rekaman.
 
-Sebelum rekaman, buka folder proyek di editor kode. Siapkan tab `src/calculations.ts`, Terminal, dan browser. Kosongkan form dengan Reset. Isi identitas asli Anda ketika demonstrasi, bukan identitas contoh.
+Sebelum rekaman, buka folder proyek di editor kode. Siapkan tab `src/calculations.ts`, Terminal, dan browser. Kosongkan form dengan Reset. Isi NIM asli Anda ketika demonstrasi, bukan NIM contoh.
 
 ## 3. Alur rekaman 4–6 menit
 
@@ -39,7 +39,7 @@ Tampilkan Terminal, masuk ke folder proyek, dan jalankan `npm run dev`. Buka ala
 
 ### 01:15–02:00 — Input dan parameter
 
-Isi nama, kelas, serta NIM asli. Tekan Hitung hasil. Jelaskan digit terakhir untuk tinggi, dua digit terakhir untuk angka awal, digit ketiga dari belakang ditambah satu untuk beda, dan dua digit terakhir ditambah 10 untuk batas prima.
+Isi NIM asli. Tekan Hitung hasil. Jelaskan digit terakhir untuk tinggi, dua digit terakhir untuk angka awal, digit ketiga dari belakang ditambah satu untuk beda, dan dua digit terakhir ditambah 10 untuk batas prima.
 
 Katakan: “Untuk beda aritmatika, saya mengikuti contoh pada soal, yaitu digit ketiga dari belakang ditambah satu.”
 
