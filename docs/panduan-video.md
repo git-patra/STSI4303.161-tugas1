@@ -5,7 +5,7 @@
 Buka Terminal (macOS) dan jalankan satu per satu:
 
 ```bash
-cd "/Users/patra/Documents/New project/praktikum-nim-typescript"
+cd "/Users/patra/Project/praktikum-nim-typescript"
 node --version
 npm --version
 npm install
@@ -19,7 +19,7 @@ Buka http://127.0.0.1:5173 di browser. Biarkan Terminal tetap berjalan selama me
 ## 2. Menjalankan lagi saat hari perekaman
 
 ```bash
-cd "/Users/patra/Documents/New project/praktikum-nim-typescript"
+cd "/Users/patra/Project/praktikum-nim-typescript"
 npm run dev
 ```
 
@@ -59,7 +59,7 @@ Baca beberapa hasil dari NIM asli dan cocokkan secara manual dengan rumus. Sebag
 Coba NIM `12` dan tunjukkan validasi. Coba `000` untuk tinggi nol. Kembalikan ke NIM asli. Bila ingin menunjukkan tes otomatis, buka Terminal kedua (jangan menghentikan server):
 
 ```bash
-cd "/Users/patra/Documents/New project/praktikum-nim-typescript"
+cd "/Users/patra/Project/praktikum-nim-typescript"
 npm test
 npm run build
 ```

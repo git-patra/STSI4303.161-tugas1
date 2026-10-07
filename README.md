@@ -7,7 +7,7 @@ Aplikasi satu halaman untuk pola segitiga, 10 suku aritmatika, dan bilangan prim
 Node.js >=20.19.0 dan npm diperlukan.
 
 ```bash
-cd "/Users/patra/Documents/New project/praktikum-nim-typescript"
+cd "/Users/patra/Project/praktikum-nim-typescript"
 npm install
 npm run dev
 ```
