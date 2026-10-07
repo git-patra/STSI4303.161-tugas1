@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2858d7" />
+  <title>Praktikum NIM · TypeScript</title>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="eyebrow"><span class="logo">TS</span> LAB PEMROGRAMAN <span class="badge">Praktikum 01</span></div>
+      <h1>Satu NIM.<br /><span>Tiga eksplorasi angka.</span></h1>
+      <p class="intro">Temukan pola segitiga, deret aritmatika, dan bilangan prima dari digit NIM Anda.</p>
+    </header>
+    <section class="card form-card" aria-labelledby="form-title">
+      <div class="section-heading"><h2 id="form-title">Data mahasiswa</h2><span class="muted">01 — INPUT</span></div>
+      <form id="nim-form" novalidate>
+        <div class="identity-fields">
+          <label>Nama <span class="optional">opsional</span><input id="name" type="text" placeholder="Nama lengkap Anda" autocomplete="name" /></label>
+          <label>Kelas <span class="optional">opsional</span><input id="class" type="text" placeholder="Contoh: TI-1A" /></label>
+        </div>
+        <label for="nim">Nomor Induk Mahasiswa <span class="required">*</span></label>
+        <input id="nim" name="nim" type="text" inputmode="numeric" required placeholder="Contoh: 230411013" aria-describedby="nim-help error" />
+        <p id="nim-help" class="help">Minimal 3 digit angka. Semua parameter dihitung otomatis dari NIM.</p>
+        <p id="error" class="error" role="alert" hidden></p>
+        <div class="actions"><button type="submit">Hitung hasil <span aria-hidden="true">↗</span></button><button type="reset" class="secondary">Reset</button></div>
+      </form>
+    </section>
+    <div class="result-heading"><h2>Hasil eksplorasi</h2><span class="muted">02 — OUTPUT</span></div>
+    <p id="status" class="status" role="status" aria-live="polite">Masukkan NIM, lalu pilih Hitung hasil untuk memulai.</p>
+    <section id="results" aria-label="Hasil perhitungan" hidden>
+      <article class="card result-card"><span class="number">01</span><div class="result-content"><div class="card-title"><h3>Segitiga angka</h3><span class="tag">Perulangan bersarang</span></div><p id="triangle-info" class="description"></p><pre id="triangle-output"></pre><p class="explanation">Setiap baris mencetak angka 1 sampai nomor baris tersebut.</p></div></article>
+      <article class="card result-card"><span class="number">02</span><div class="result-content"><div class="card-title"><h3>Deret aritmatika</h3><span class="tag">10 suku pertama</span></div><p id="arithmetic-info" class="description"></p><p id="arithmetic-output" class="output"></p><p class="explanation">Rumus: Uₙ = awal + (n − 1) × beda. Mengikuti contoh soal, beda = digit ketiga dari belakang + 1.</p></div></article>
+      <article class="card result-card"><span class="number">03</span><div class="result-content"><div class="card-title"><h3>Bilangan prima</h3><span class="tag">Pemeriksaan pembagi</span></div><p id="prime-info" class="description"></p><p id="prime-output" class="output"></p><p class="explanation">Bilangan prima memiliki tepat dua faktor: 1 dan dirinya sendiri. Angka 1 bukan bilangan prima.</p></div></article>
+    </section>
+    <footer>Praktikum TypeScript <span>Belajar lewat pola, logika, dan perulangan.</span></footer>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
